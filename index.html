@@ -1,34 +1,190 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>CSS moderno</title>
-  <link rel="stylesheet" href="css_pagina2_.css">
+	<title>styles</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="shortcut icon" href="img/favicon.png" sizes="32x32" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <header>INICIO | PESQUISAR | CURIOSIDADES | CONTATO</header>
-  <main>
-    <h1>1. Há mais de um século, os cadernos de Marie Curie continuam radioativos</h1>
-    <p>Os cadernos da cientista Marie Curie, responsável pela descoberta dos elementos químicos polônio e rádio, ainda são radioativos. O longo período de exposição à radioatividade foi fatal para Marie Curie e, mesmo mais de um século depois dos experimentos, os cadernos que ela usava continuam altamente perigosos. São provavelmente os documentos mais bem guardados da biblioteca, que abriga alguns dos livros mais raros e antigos do mundo.
-      Marie Curie, cujo nome de nascimento era Maria Salomea Skłodowska, morreu em 1934, de uma anemia aplásica, um tipo raro de anemia que provavelmente resultou de sua frequente exposição ao rádio e ao polônio — dos quais costumava carregar amostras em seu bolso. Dessa forma, qualquer objeto relacionado a ela e que ainda é mantido deve ser guardado com precauções extras e em caixas de chumbo, incluindo o próprio corpo da cientista, o primeiro de uma mulher a ser sepultado, por seus próprios méritos, no Panteão de Paris, o célebre mausoléu das glórias da França.
-    </p>
-  </main>
-  <nav>
-    <h4>DICA DO DIA!!!
-    </h4>
-    <p>Na Loja Havaianas as Legítimas, todo dia é dia comprar com o menor preço. Venha conhecer a nossa variedade em sandálias! Havaianas masculinas, femininas, infantil e infanto juvenil. Loja Havaianas as Legítimas, onde você vai encontrar o modelo de Havaianas ideal pra você. Sandálias Havaianas a partir de R$15,00. Gosta de comprar barato de verdade? Então corra agora mesmo pra Loja Havaianas as Legítimas!
-    </p>
-  </nav>
-  <aside>
-    <h4>QUER SABER MAIS CURIOSIDADES?</h4>
-    <p>As pegadas dos astronautas ainda estão na Lua;
-      Somos povoados por bactérias;
-      Somos o vazio;
-      O cérebro de Einstein ainda está entre nós;
-      Proporção entre vivos e mortos;
-      A obra de arte mais cara do mundo;
-      Quem descobriu a América;</p>
-  </aside>
-  <footer>CONTATO : (41) 99999-9999 - Rua. André de Barros, 750 - Centro, Curitiba - PR, 80010-080</footer>
-</body>
-</html>
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed">
+			<div class="container">
+				<div class="navbar-header">
+					<!-- LOGO -->
+					<a href="index.html" alt="betabase - home" title="Home"><img id="logo" src="img/logomarcaa.png"></a>
+					<!-- SMARTPHONE -->
+					<button type="button" style="margin-top:25px" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu_lista" aria-expanded="false">
+						<span style="background-color:#9bbd46" class="icon-bar"></span>
+						<span style="background-color:#9bbd46" class="icon-bar"></span>
+						<span style="background-color:#9bbd46" class="icon-bar"></span>
+					</button>	
+				</div>
+				<div class="collapse navbar-collapse" id="menu_lista">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="link_menu"><a href="sobre.html">Sobre</a></li>
+						<li class="link_menu"><a href="#">Home</a></li>
+						<li class="link_menu"><a href="#">Projetos</a></li>
+						<li class="link_menu"><a href="#" data-toggle="modal" data-target="#help">Ajuda</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+	</header>
+    <div id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-xs-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    
+                        <!-- PONTOS REPRESENTATIVOS DE IMAGENS -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+    
+                        <!-- IMAGENS -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/algodao.jpeg" class="img-thumbnail center" alt="beta-glicosidases">
+                                <div class="carousel-caption">
+                                    <strong>Algodão</strong>: o componente que pode ser produzido em uma grande diversidade 
+                                    de roupas, já que tem origem natural e varia bastante de região para região.
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <img src="img/la.png" class="img-thumbnail"  alt="agem em parceria com endo- e exoglucanases.">
+                                <div class="carousel-caption">
+                                    <strong>Lã</strong>: sendo a principal peça do inverno, a lã tem uma história muito longa ao redor
+                                    de todo o mundo e até hoje é a principal fibra natural na composição de peças para o inverno.
+                                </div>
+                            </div>
+    
+                            <div class="item">
+                                <img src="img/malha.jpg" class="img-thumbnail"  alt="...">
+                                <div class="carousel-caption">
+                                    <strong>Malha</strong>: é o material mais variado, pois pode 
+                                    ser produzida com diferentes materiais, a maioria sintéticos hoje em dia, como o poliéster e a poliamida.
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <!-- CONTROLES -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="col-md-7 col-xs-12">
+                    <h1>TECIDOS DE ROUPAS</h1>
+                    <p>Existem diversos tipos de tecido de roupa na indústria têxtil e 
+                    essa versatilidade possibilita a criação das mais diferentes roupas. Cada tecido e fibras tem suas características específicas que
+                    vão ajudar a produzir determinada peça. Para quem está iniciando na costura
+                    ou querendo aprender mais sobre os tecidos, uma dica é examinar as etiquetas das roupas e explorar cada informação indicada ali.
+                    </p>
+                    <p>Antes de escolher o tecido deve-se pensar em qual peça gostaria de utilizar. Depois, algumas características do tecido como conforto e durabilidade.
+                    Além disso, todo tecido pode ser feito com fibras naturais ou artificiais (sintéticas) e essa diferença também altera a qualidade da peça. </p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="middle">
+        <div class="container">
+            <div class="row"> 
+                <div class="col-md-4"> 
+                    <div class="thumbnail"> 
+                        <img src="img/sobre.png" class="img-thumbnail"> 
+    
+                        <div class="caption"> 
+                            <h3>Sobre</h3> 
+                            <p>Antes de escolher o tecido deve-se pensar em qual peça gostaria de utilizar. Depois, algumas características do tecido.</p> 
+                            <p><a href="sobre.html" class="btn btn-primary" role="button">Saiba mais</a> 
+                            </div> 
+                        </div> 
+                    </div> 
+    
+                    <div class="col-md-4"> 
+                        <div class="thumbnail"> 
+                            <img src="img/tecidosderoupa.jpg" class="img-thumbnail"> 
+                            <div class="caption"> 
+                                <h3>Tipos de tecidos</h3> 
+                                <p>Existem diversos tipos de tecido de roupa na indústria têxtil e essa versatilidade possibilita a criação das mais diferentes roupas.</p> <p><a href="#" class="btn btn-primary" role="button">Saiba mais</a>
+                            </div> 
+                        </div> 
+                    </div> 
+                    
+                    <div class="col-md-4"> 
+                        <div class="thumbnail"> 
+                            <img src="img/ponto.jpg" class="img-thumbnail"> 
+                            <div class="caption"> 
+                                <h3>Dúvidas sobre os tecido</h3> 
+                                <p>Quais os melhores tecidos para um vestido?
+                                Quais tipos de tecidos deixam as roupas mais firmes?
+                                Para mais dúvidas, pressione o "Saiba mais"
+                                </p> <p><a href="#" class="btn btn-primary" role="button">Saiba mais</a>
+                            </div> 
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+         <!-- MODAL HELP -->
+<div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="help">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Ajuda</h4>
+        </div>
+        <div class="modal-body">
+          <p style="text-align:center"><img src="img/logomarca2.png" alt="logo styles"></p><br>
+          <p>Styles é uma base de dados com todas as dúvidas e curiosidades sobre tecidos de roupas
+              disponíveis na internet.</p>
+            <p>Pressione <b>projetos</b> para obter uma lista de tecidos disponíveis. Para buscar
+             novos tecidos, clique no menu <b>Saiba mais</b>. Para mais informações, entre em contato com 
+             <a href="#">Andrey G. Carneiro</a>.
+           </p><br>
+           <p><label class="label label-default">Atualizado em:</label> 16 de dezembro, 2022</p>
+         </div>
+         <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIM Modal -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"><a href="index.html"><img id="logo" src="img/logomarcaa.png"></a></div>
+                    <div class="col-md-1 lista_footer"><a href="sobre.html">Sobre</a></div>
+                    <div class="col-md-1 lista_footer"><a href="#">Listar</a></div>
+                    <div class="col-md-1 lista_footer"><a href="#">Buscar</a></div>
+                    <div class="col-md-1 lista_footer"><a href="#" data-toggle="modal" data-target="#help">Ajuda</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2022 styles | Todos os direitos reservados. Construido por <a href="#">Andrey G. Carneiro</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- jQuery -->
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+        </footer>
+        </body>
+        </html>
+        
